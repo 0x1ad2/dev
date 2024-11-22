@@ -1,0 +1,89 @@
+/* pandoc curriculum-vitae-pdf.md -o curriculum-vitae.pdf --pdf-engine=wkhtmltopdf -c curriculum-vitae.css */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  word-spacing: 0.1em;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #000;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: #000;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #6f6f6f;
+}
+
+ul,
+ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.4em;
+}
+
+hr {
+  color: #ddd;
+  height: 1px;
+  margin: 2em 0;
+  border-top: solid 1px #ddd;
+  border-bottom: none;
+  border-left: 0;
+  border-right: 0;
+}
+
+.page-break {
+  page-break-before: always;
+  margin-top: 1em;
+}
